@@ -36,61 +36,40 @@
 =======
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+
 <body>
-   <div align="center">
-    <p>
-        <label for="name">Name: </label>
-        <input type="text" id="name">
-    </p>
-    <p>
-        <label for="age">Age: </label>
-        <input type="number" min="1" max="130" id="age">
-    </p>
-    <p>
-        <button onclick="addRow()">Add</button>
-    </p>
-    <table width="40%"  border="1px" align="center" cellspacing="0" cellpadding="10" id="info">
-        <tr>
-            <th>No.</th>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-    </table>
-</div>
-<script>
-    let count = 1;
-    function addRow() {
-        let nameInput = document.getElementById('name').value;
-        let ageInput = document.getElementById('age').value;
-        if (nameInput && ageInput) {
-
-            const table = document.getElementById("info");
-            const newRow = table.insertRow(); 
-            const cell1 = newRow.insertCell(0);
-            const cell2 = newRow.insertCell(1);
-            const cell3 = newRow.insertCell(2);
-            
-            cell1.textContent  = count++;
-            cell2.textContent  = nameInput;
-            cell3.textContent  = ageInput;
-
-            document.getElementById("name").value = "";
-            document.getElementById("age").value = "";
-        } else {
-            alert("Please, enter Name and Age");
-        }
-
-
-    }
-    // to do 
-    // cannot enter empty name and age
-    // auto delete content after clicking the "add" button
-</script>
+    <div align="center">
+        <p>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+        </p>
+        <p>
+            <label for="age">Age: </label>
+            <input type="number" min="1" max="10" id="age">
+        </p>
+        <p>
+            <button onclick="addRow()">Add</button>
+        </p>
+        <table width="40%" border="1px" align="center" cellspacing="0" cellpadding="10" id="info">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
 </body>
+<<<<<<< HEAD
 </html>
 >>>>>>> a31bcf7 (Add regex to validate inputs)
+=======
+
+</html>
+>>>>>>> 39f4ad1 (Add regex to validate inputs)
