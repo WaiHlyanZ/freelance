@@ -1,11 +1,16 @@
 
+
+
+-- selecting the database
+USE shop_data;
+
 -- creating sale_people table
 CREATE TABLE sale_people (
     sale_number INT,
     sale_name VARCHAR(50),
     city VARCHAR(50),
     c_omm DECIMAL(3, 2)
-)
+);
 
 -- creating customers table
 CREATE TABLE customers (
@@ -14,7 +19,7 @@ CREATE TABLE customers (
     city VARCHAR(50),
     rating INT,
     s_num INT
-)
+);
 
 -- creating orders table
 CREATE TABLE orders (
@@ -23,4 +28,4 @@ CREATE TABLE orders (
     ordered_date DATE,
     c_num INT,
     s_num INT
-)
+);
