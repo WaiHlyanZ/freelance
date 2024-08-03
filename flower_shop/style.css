@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
@@ -47,7 +48,7 @@ button:hover {
 
 
 .container {
-    padding: 0 2.5rem;
+    padding: 1rem 2.5rem;
     position: relative;
 }
 
@@ -164,7 +165,8 @@ nav .links li a img:hover::before {
 .content {
     color: #e63946;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100vw;
 }
 
 .content .text {
@@ -218,24 +220,24 @@ nav .links li a img:hover::before {
 
 .product-list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: space-between;
+
 }
 
 .product {
     border: 1px solid #ec6f6f;
     border-radius: 5px;
-    padding: 20px;
+    padding: 1.4rem;
     text-align: center;
     width: 30%;
+    height: 70%;
     position: relative;
     overflow: hidden;
 }
 
 .product img {
-    width: 300px;
-    height: 360px;
+    width: 100%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
@@ -270,7 +272,8 @@ nav .links li a img:hover::before {
 
 
 .events .wedding {
-    width: 100%;
+    width: 100vw;
+    height: 100%;
     background-image: url(images/events/pink_hair_wedding1.jpeg);
     background-attachment: fixed; /*this code make img stay not move if you want to move place "fixed" to "scroll"*/
     background-size: cover;
@@ -308,12 +311,13 @@ nav .links li a img:hover::before {
 
 .gif .gif-section {
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
 }
 
 .gif .gif-section img {
-    width: 400px;
+    width: 25rem;
 }
 
 .gif-section .send {
@@ -361,27 +365,17 @@ hr {
     border-radius: 3px;
 }
 
-.btn {
-    background-color: #ec6f6f;
-    color: white;
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: transparent;
-    border: 1px solid #ec6f6f;
-}
-
-
 
 .events .store {
-    padding: 2rem;
-    padding-left: 7rem;
     display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-left: 5rem;
     gap: 3rem;
+}
+
+.events .store img {
+    width: 60vw;
 }
 
 address, time {
@@ -470,32 +464,23 @@ footer {
     width: 200px;
 }
 
-.footer-subscribe button {
-    background-color: #ec6f6f;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.footer-subscribe button:hover {
-    background-color: #e63946;
-}
-
 .footer-disclaimer {
     margin-top: 1rem;
 }
 
 
 /* BREAKPOINS */
-@media screen and (max-width: 992px) {
-    /* header {
-        padding: 0.5rem 0%;
-    } */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 640px){
+    html {
+        font-size: 14px;
+    }
+
     header {
         border: none;
     }
@@ -535,7 +520,7 @@ footer {
     }
 
     #check:checked~nav {
-        height: 20rem;
+        height: 22rem;
     }
 
     #check:checked~.x-menu {
@@ -551,4 +536,41 @@ footer {
         transition: 0.3s ease;
     }
 
+
+
+    nav .logo {
+        width: 5em;
+        height: 5em;
+    }
+
+    nav .menu {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 3em;
+        margin-right: 2em;
+    }
+
+    nav .menu li {
+        display: inline;
+    }
+
+    nav .menu li a {
+        text-decoration: none;
+        color: #ec6f6f;
+        font-weight: bold;
+    }
+
+    nav .menu li img {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+
+    .contact .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
 }
