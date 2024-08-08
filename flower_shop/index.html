@@ -4,39 +4,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <div>
-            <a href="/index.html"><img class="logo" src="images/red_lily_logo.jpg" alt="logo"></a>
-        </div>
-        <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#cart"><img src="images/cart.png" alt=""></a></li>
-        </ul>
-    </nav>
-    <div class="container">
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="images/icons/red_lily_logo.jpg" alt="logo">
+            <span>Pink <br> Lily</span>
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <div class="burger-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+            </div>
+            <div class="x-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
+                    <path
+                        d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                    </path>
+                </svg>
+            </div>
+        </label>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cart" class="cart"><img src="images/icons/cart.png" alt="Cart"></a></li>
 
-
-
-        <div class="contact">
+            </ul>
+        </nav>
+    </header>
+    <section class="landing">
+        <div class="content container">
             <div class="text">
-                <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
+                <h1>Feel the nature beauties</h1>
+                <p>
+                    Discover a blooming paradise
+                </p>
+                <button>Feel Now</button>
             </div>
             <div class="image">
-                <img src="contact-image.jpg" alt="Contact Image">
+                <img src="images/flower_pot.png" alt="flower">
             </div>
         </div>
-    </div>
+
+        <div id="shop" class="products">
+            <h2>Pink Lily's products</h2>
+            <div class="product-list container">
+
+                <div class="product">
+                    <img src="images/products/p1.png" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/products/p1.png" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$29.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/products/p1.png" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$39.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="discount">
+
+                <button>Buy 3, get 20% discount</button>
+            </div>
+            <div class="product-list container">
+                <div class="product">
+                    <img src="images/products/p1.png" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$39.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/products/p1.png" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$29.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/products/p1.png" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$29.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+            </div>
+            <div class="discount">
+                <button>Buy 3, get 20% discount</button>
+            </div>
+        </div>
+
+    </section>
+    <section class="events">
+        <div class="wedding">
+            <h2>Let's bloom together!</h2>
+            <p>Wedding special offer</p>
+            <button>Contact Now</button>
+        </div>
+
+        <div class="gif container">
+            <p>Gif to your close one</p>
+            <h3>from any where, any time</h3>
+            <div class="gif-section">
+
+                <img src="images/events/gift.jpeg" alt="women-flower">
+
+                <div class="send">
+                    <div class="send-headers">
+                        <p>FLORAL INK</p>
+                        <h3>VICTORIA FALLS</h3>
+                        <p>$165.00</p>
+                        <hr>
+                    </div>
+                    <div class="send-info">
+
+                        <div class="order-details">
+                        </div>
+                        <div class="payment-details">
+                            <h2>Payment Details</h2>
+
+                            <form>
+                                <label for="name">Name on Card:</label>
+                                <input type="text" id="name" name="name" required>
+                                <label for="card-number">Card Number:</label>
+                                <input type="text" id="card-number" name="card-number" required>
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" name="cvv" required>
+                                <label for="expiry-date">Expiry Date:</label>
+                                <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YY">
+                                <button type="submit" class="btn brown">Gif to yours one</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="store container">
+            <img src="images/events/store.png" alt="store">
+            <div class="store-content">
+                <h4>Our Store</h4>
+                <address>
+                    10 Station St Wentworth Falls <br>
+                    Phone: 0409 761 911 (Store Hours Only)
+                </address>
+
+                <h4>Opening Hours</h4>
+                <time>
+                    Monday ~ 9am to 2pm <br>
+                    Tuesday ~ 9am to 4:30pm <br>
+                    Wednesday ~ 9am to 4:30pm <br>
+                    Thursday ~ 9am to 4:30pm <br>
+                    Friday ~ 9am to 4:30pm <br>
+                    Saturday ~ 9am to 4.30pm <br>
+                    Sunday ~ 10am to 2pm
+                </time>
+                <p>Our hours are subject to change</p>
+                <button>Get Directions</button>
+            </div>
+        </div>
+
+    </section>
+    <footer id="contact" class="container">
+        
+            <div class="footer-content">
+                <a href="/index.html" class="logo">
+                    <img src="images/icons/red_lily_logo.jpg" alt="logo">
+                    <span>Pink <br> Lily</span>
+                </a>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-subscribe">
+                    <p>Subscribe to our newsletter:</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><img src="images/icons/fb_icon.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="images/icons/ig_icon.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="images/icons/twitter_icon.png" alt="Twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>&copy; 2024 Pink Lily. All Rights Reserved.</p>
+            </div>
+       
+    </footer>
+
 </body>
 
 </html>
