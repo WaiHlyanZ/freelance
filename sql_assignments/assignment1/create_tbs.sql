@@ -1,11 +1,9 @@
 
-
-
 -- selecting the database
 USE shop_data;
 
 -- creating sale_people table
-CREATE TABLE sale_people (
+CREATE TABLE sales_people (
     sale_number INT,
     sale_name VARCHAR(50),
     city VARCHAR(50),
