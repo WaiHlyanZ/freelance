@@ -1,0 +1,1 @@
+-- To write all command in this single .sql file

@@ -4,7 +4,7 @@ USE shop_data;
 
 
 -- Insert data into sales_people table
-INSERT INTO sale_people (sale_number, sale_name, city, c_omm) VALUES
+INSERT INTO sales_people (sale_number, sale_name, city, c_omm) VALUES
 (1001, 'Peel', 'London', 0.12),
 (1002, 'Serres', 'San Jose', 0.13),
 (1004, 'Motika', 'London', 0.11),
