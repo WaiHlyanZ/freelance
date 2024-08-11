@@ -4,15 +4,15 @@ USE shop_data;
 
 -- creating sale_people table
 CREATE TABLE sales_people (
-    sale_number INT,
-    sale_name VARCHAR(50),
+    s_num INT,
+    s_name VARCHAR(50),
     city VARCHAR(50),
-    c_omm DECIMAL(3, 2)
+    comm DECIMAL(3, 2)
 );
 
 -- creating customers table
 CREATE TABLE customers (
-    c_number INT,
+    c_num INT,
     c_name VARCHAR(50),
     city VARCHAR(50),
     rating INT,
@@ -21,9 +21,9 @@ CREATE TABLE customers (
 
 -- creating orders table
 CREATE TABLE orders (
-    order_number INT,
+    o_num INT,
     amount DECIMAL(7, 2),
-    ordered_date DATE,
+    o_date DATE,
     c_num INT,
     s_num INT
 );
