@@ -1,27 +1,28 @@
--- To write all command in this single .sql file
 
 USE shop_data;
 
 -- Task 1
-SELECT order_number, amount, ordered_date
+SELECT o_num, amount, o_date
 FROM orders;
 
 -- Task 2
 SELECT * 
-FROM customers WHERE s_num = 1001;
+FROM customers 
+WHERE s_num = 1001;
 
 -- Task 3
-SELECT city, sale_name, sale_number, c_omm
+SELECT city, s_name, s_num, comm
 FROM sales_people;
 
 -- Task 4
 SELECT *
-FROM customers ORDER BY c_name;
+FROM customers 
+ORDER BY c_name;
 
 -- Task 5
-SELECT sale_name, city
+SELECT s_name, city
 FROM sales_people
-WHERE city = "London" AND c_omm > 0.1;
+WHERE city = "London" AND comm > 0.1;
 
 -- Task 6
 SELECT *
@@ -40,7 +41,7 @@ FROM customers;
 -- Task 9
 SELECT *
 FROM sales_people
-WHERE c_omm NOT IN (0.10, 0.13, 0.15);
+WHERE comm NOT IN (0.10, 0.13, 0.15);
 
 -- Task 10
 SELECT *
@@ -56,4 +57,4 @@ WHERE city = "Rome";
 -- Task 12
 SELECT *
 FROM orders
-WHERE ordered_date BETWEEN "1990-10-04" AND "1990-10-08";
+WHERE o_date BETWEEN "1990-10-04" AND "1990-10-08";

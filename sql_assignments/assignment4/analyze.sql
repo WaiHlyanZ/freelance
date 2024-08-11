@@ -1,3 +1,4 @@
+
 USE shop_data;
 
 -- Task 1
@@ -17,11 +18,11 @@ ORDER BY amount
 LIMIT 1;
 
 -- Task 4
-SELECT ordered_date, MAX(amount) AS highest_amount
+SELECT o_date, MAX(amount) AS highest_amount
 FROM orders
-GROUP BY ordered_date;
+GROUP BY o_date;
 
 -- Task 5
-SELECT rating, c_name, c_number
+SELECT rating, c_name, c_num
 FROM customers
 ORDER BY rating DESC;

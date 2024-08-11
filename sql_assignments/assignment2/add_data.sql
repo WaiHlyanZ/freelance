@@ -4,7 +4,7 @@ USE shop_data;
 
 
 -- Insert data into sales_people table
-INSERT INTO sales_people (sale_number, sale_name, city, c_omm) VALUES
+INSERT INTO sales_people (s_num, s_name, city, comm) VALUES
 (1001, 'Peel', 'London', 0.12),
 (1002, 'Serres', 'San Jose', 0.13),
 (1004, 'Motika', 'London', 0.11),
@@ -12,7 +12,7 @@ INSERT INTO sales_people (sale_number, sale_name, city, c_omm) VALUES
 (1003, 'Axelrod', 'New York', 0.10);
 
 -- Insert data into customers table
-INSERT INTO customers (c_number, c_name, city, rating, s_num) VALUES
+INSERT INTO customers (c_num, c_name, city, rating, s_num) VALUES
 (2001, 'Hoffman', 'London', 100, 1001),
 (2002, 'Giovanni', 'Rome', 200, 1003),
 (2003, 'Liu', 'San Jose', 200, 1002),
@@ -22,7 +22,7 @@ INSERT INTO customers (c_number, c_name, city, rating, s_num) VALUES
 (2007, 'Pereira', 'Rome', 100, 1004);
 
 -- Insert data into customer_orders table
-INSERT INTO orders (order_number, amount, ordered_date, c_num, s_num) VALUES
+INSERT INTO orders (o_num, amount, o_date, c_num, s_num) VALUES
 (3001, 18.69, '1990-10-03', 2008, 1007),
 (3003, 767.19, '1990-10-03', 2001, 1001),
 (3002, 1900.10, '1990-10-03', 2007, 1004),
@@ -33,4 +33,3 @@ INSERT INTO orders (order_number, amount, ordered_date, c_num, s_num) VALUES
 (3008, 4723.00, '1990-10-05', 2006, 1001),
 (3010, 1309.95, '1990-10-05', 2004, 1002),
 (3011, 9891.88, '1990-10-06', 2006, 1001);
-
